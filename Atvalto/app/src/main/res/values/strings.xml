@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">Átváltó</string>
+    <string name="action_settings">Beállítások</string>
+
+    <string name="hossz_prompt">Válassz!</string>
+    <string-array name="hosszmertekek">
+        <item>kilométer(km)</item>
+        <item>méter(m)</item>
+        <item>deciméter(dm)</item>
+        <item>centiméter(cm)</item>
+        <item>milliméter(mm)</item>
+    </string-array>
+
+    <string name="tomeg_prompt">Válassz!</string>
+    <string-array name="tomeg">
+        <item>tonna(t)</item>
+        <item>kilogramm(kg)</item>
+        <item>dekagramm(dkg)</item>
+        <item>gramm(g)</item>
+        <item>milligramm(mg)</item>
+    </string-array>
+
+    <string name="adat_prompt">Válassz!</string>
+    <string-array name="adat">
+        <item>bit</item>
+        <item>byte</item>
+        <item>kilobyte</item>
+        <item>megabyte</item>
+        <item>gigabyte</item>
+        <item>terabyte</item>
+    </string-array>
+
+    <string name="hang_prompt">Válassz!</string>
+    <string-array name="hang">
+        <item>Bel(B)</item>
+        <item>Decibel(dB)</item>
+    </string-array>
+
+    <string name="homerseklet_prompt">Válassz!</string>
+    <string-array name="homerseklet">
+        <item>Celsius(°C)</item>
+        <item>Fahrenheit(°F)</item>
+        <item>Kelvin(°K)</item>
+    </string-array>
+
+    <string name="terfogat_prompt">Válassz!</string>
+    <string-array name="terfogat">
+        <item>mm3</item>
+        <item>cm3</item>
+        <item>dm3</item>
+        <item>m3</item>
+        <item>km3</item>
+    </string-array>
+
+    <!-- ==================================================================================== -->
+
+    <string name="terulet_prompt">Válassz!</string>
+    <string-array name="terulet">
+        <item>négyzetkilométer(km2)</item>
+        <item>négyzetméter(m2)</item>
+        <item>négyzetcentiméter(cm2)</item>
+        <item>négyzetmiliméter(mm2)</item>
+    </string-array>
+
+    <string name="szog_prompt">Válassz!</string>
+    <string-array name="szog">
+        <item>forgatás</item>
+        <item>fok</item>
+        <item>radián</item>
+        <item>gradián</item>
+    </string-array>
+
+    <string name="nyomas_prompt">Válassz!</string>
+    <string-array name="nyomas">
+        <item>Pascal(PA)</item>
+        <item>Bár</item>
+        <item>Technikai atmoszféra(at)</item>
+        <item>Fizikai atmoszféra(atm)</item>
+    </string-array>
+
+    <string name="ero_prompt">Válassz!</string>
+    <string-array name="ero">
+        <item>Newton(N)</item>
+        <item>Dekanewton(daN)</item>
+        <item>Kilonewton(kN)</item>
+        <item>Kilopond(kp)</item>
+    </string-array>
+
+    <string name="nyomatek_prompt">Válassz!</string>
+    <string-array name="nyomatek">
+        <item>Newtonméter(Nm)</item>
+        <item>Kilonewtonméter(kNm)</item>
+        <item>Meganewtonméter(MNm)</item>
+        <item>Newtonmiliméter(Nmm)</item>
+    </string-array>
+
+    <string name="tehetetlenseg_prompt">Válassz!</string>
+    <string-array name="tehetetlenseg">
+        <item>kilogram négyzetméter(kgm2)</item>
+        <item>kilogram négyzetcentiméter(kgcm2)</item>
+        <item>kilogram négyzetmiliméter(kgmm2)</item>
+    </string-array>
+
+    <string name="suruseg_prompt">Válassz!</string>
+    <string-array name="suruseg">
+        <item>kg/m3</item>
+        <item>kg/cm3</item>
+        <item>g/m3</item>
+    </string-array>
+
+    <string name="sebesseg_prompt">Válassz!</string>
+    <string-array name="sebesseg">
+        <item>m/s</item>
+        <item>m/h</item>
+        <item>km/h</item>
+    </string-array>
+
+    <string name="kijelzo_prompt">Válassz!</string>
+    <string-array name="kijelzo">
+        <item>dot/m</item>
+        <item>dot/mm</item>
+        <item>dot/in</item>
+        <item>pixel/in</item>
+    </string-array>
+
+    <string name="kep_prompt">Válassz!</string>
+    <string-array name="kep">
+        <item>cm</item>
+        <item>mm</item>
+        <item>inch</item>
+    </string-array>
+
+    <string name="toltes_prompt">Válassz!</string>
+    <string-array name="toltes">
+        <item>Coulumb(C)</item>
+        <item>MegaCoulumb(MC)</item>
+        <item>KiloCoulumb(KC)</item>
+    </string-array>
+
+    <string name="teljesitmeny_prompt">Válassz!</string>
+    <string-array name="teljesitmeny">
+        <item>watt(W)</item>
+        <item>kilowatt(kW)</item>
+        <item>lóerő(LE)</item>
+    </string-array>
+
+    <string name="aramerosseg_prompt">Válassz!</string>
+    <string-array name="aramerosseg">
+        <item>amper(A)</item>
+        <item>kilo amper(kA)</item>
+        <item>mili amper(mA)</item>
+    </string-array>
+
+    <string name="energia_prompt">Válassz!</string>
+    <string-array name="energia">
+        <item>joule(J)</item>
+        <item>kilojoule(kJ)</item>
+        <item>kalória(cal)</item>
+        <item>kilokalória(kcal)</item>
+    </string-array>
+
+    <string name="ellenallas_prompt">Válassz!</string>
+    <string-array name="ellenallas">
+        <item>Ohm</item>
+        <item>Mega Ohm</item>
+        <item>Micro Ohm</item>
+    </string-array>
+
+    <string name="vezetokepesseg_prompt">Válassz!</string>
+    <string-array name="vezetokepesseg">
+        <item>Siemens(S)</item>
+        <item>Mega Siemens(MS)</item>
+        <item>Kilo Siemens(KS)</item>
+        <item>Mili Siemens(mS)</item>
+    </string-array>
+
+    <string name="induktor_prompt">Válassz!</string>
+    <string-array name="induktor">
+        <item>henry(H)</item>
+        <item>exahenry(EH)</item>
+        <item>petahenry(PH)</item>
+        <item>gigahenry(GH)</item>
+    </string-array>
+
+    <string name="sugarzas_prompt">Válassz!</string>
+    <string-array name="sugarzas">
+        <item>gray/s</item>
+        <item>exagray/s</item>
+        <item>petagray/s</item>
+        <item>gigagray/s</item>
+    </string-array>
+
+    <string name="plusz"><b>\u002B</b></string>
+    <string name="minusz"><b>\u2212</b></string>
+    <string name="szorzas"><b>\u2715</b></string>
+    <string name="osztas"><b>\u00F7</b></string>
+    <string name="egyenloseg"><b>\u003D</b></string>
+    <string name="title_activity_main">Számológép</string>
+    <string name="nulla"><b>0</b></string>
+    <string name="egy"><b>1</b></string>
+    <string name="ketto"><b>2</b></string>
+    <string name="harom"><b>3</b></string>
+    <string name="negy"><b>4</b></string>
+    <string name="ot"><b>5</b></string>
+    <string name="hat"><b>6</b></string>
+    <string name="het"><b>7</b></string>
+    <string name="nyolc"><b>8</b></string>
+    <string name="kilenc"><b>9</b></string>
+    <string name="torles"><b>\u00AB</b></string>
+</resources>

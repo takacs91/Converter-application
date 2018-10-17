@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hu.miskolc.uni.iit.atvalto">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Átváltó">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Tomeg"
+            android:parentActivityName=".MainActivity"
+            android:label="Tömeg">
+        </activity>
+
+        <activity
+            android:name=".Hossz"
+            android:parentActivityName=".MainActivity"
+            android:label="Hossz">
+        </activity>
+
+        <activity
+            android:name=".Terulet"
+            android:parentActivityName=".MainActivity"
+            android:label="Terület">
+        </activity>
+
+        <activity
+            android:name=".Szog"
+            android:parentActivityName=".MainActivity"
+            android:label="Szög">
+        </activity>
+
+        <activity
+            android:name=".Homerseklet"
+            android:parentActivityName=".MainActivity"
+            android:label="Hőmérséklet">
+        </activity>
+
+        <activity
+            android:name=".Nyomas"
+            android:parentActivityName=".MainActivity"
+            android:label="Nyomás">
+        </activity>
+
+        <activity
+            android:name=".Ero"
+            android:parentActivityName=".MainActivity"
+            android:label="Erő">
+        </activity>
+
+        <activity
+            android:name="FNyomatek"
+            android:parentActivityName=".MainActivity"
+            android:label="F. nyomaték">
+        </activity>
+
+        <activity
+            android:name=".Tehetetlenseg"
+            android:parentActivityName=".MainActivity"
+            android:label="Tehetetlenség">
+        </activity>
+
+        <activity
+            android:name=".Suruseg"
+            android:parentActivityName=".MainActivity"
+            android:label="Sűrűség">
+        </activity>
+
+        <activity
+            android:name=".Hang"
+            android:parentActivityName=".MainActivity"
+            android:label="Hang">
+        </activity>
+
+        <activity
+            android:name="Terfogat"
+            android:parentActivityName=".MainActivity"
+            android:label="Térfogat">
+        </activity>
+
+        <activity
+            android:name=".Sebesseg"
+            android:parentActivityName=".MainActivity"
+            android:label="Sebesség">
+        </activity>
+
+        <activity
+            android:name=".Kijelzo"
+            android:parentActivityName=".MainActivity"
+            android:label="Kijelző">
+        </activity>
+
+        <activity
+            android:name=".Kep"
+            android:parentActivityName=".MainActivity"
+            android:label="Kép">
+        </activity>
+
+        <activity
+            android:name=".Adat"
+            android:parentActivityName=".MainActivity"
+            android:label="Adat">
+        </activity>
+
+        <activity
+            android:name=".Toltes"
+            android:parentActivityName=".MainActivity"
+            android:label="Töltés">
+        </activity>
+
+        <activity
+            android:name=".Teljesitmeny"
+            android:parentActivityName=".MainActivity"
+            android:label="Teljesítmény">
+        </activity>
+
+        <activity
+            android:name=".Aramerosseg"
+            android:parentActivityName=".MainActivity"
+            android:label="Áramerősség">
+        </activity>
+
+        <activity
+            android:name=".Energia"
+            android:parentActivityName=".MainActivity"
+            android:label="Energia">
+        </activity>
+
+        <activity
+            android:name=".Ellenallas"
+            android:parentActivityName=".MainActivity"
+            android:label="Ellenállás">
+        </activity>
+
+        <activity
+            android:name=".Vezetokepesseg"
+            android:parentActivityName=".MainActivity"
+            android:label="Vezetőképesség">
+        </activity>
+
+        <activity
+            android:name=".Induktor"
+            android:parentActivityName=".MainActivity"
+            android:label="Induktor">
+        </activity>
+
+        <activity
+            android:name=".Sugarzas"
+            android:parentActivityName=".MainActivity"
+            android:label="Sugárzás">
+        </activity>
+    </application>
+
+</manifest>
+

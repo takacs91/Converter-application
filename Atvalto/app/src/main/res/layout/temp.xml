@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#C0C0C0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/red"
+                            android:fontFamily="casual"
+                            android:paddingLeft="10dp"
+                            android:text="Mérnöki"
+                            android:textAllCaps="false"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button1"
+                                android:onClick="onClick"
+                                android:text="Tömeg"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button2"
+                                android:onClick="onClick"
+                                android:text="Hossz"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button3"
+                                android:onClick="onClick"
+                                android:text="Terület"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button4"
+                                android:onClick="onClick"
+                                android:text="Szög"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button5"
+                                android:onClick="onClick"
+                                android:text="Hőmérséklet"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button6"
+                                android:onClick="onClick"
+                                android:text="Nyomás"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button7"
+                                android:onClick="onClick"
+                                android:text="Erő"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button8"
+                                android:onClick="onClick"
+                                android:text="F. nyomaték"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button9"
+                                android:onClick="onClick"
+                                android:text="Tehetetlenség"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button10"
+                                android:onClick="onClick"
+                                android:text="Sűrűség"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button11"
+                                android:onClick="onClick"
+                                android:text="Hang"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button12"
+                                android:onClick="onClick"
+                                android:text="Térfogat"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button13"
+                                android:onClick="onClick"
+                                android:text="Sebesség"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button205"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/button206"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/red"
+                            android:fontFamily="casual"
+                            android:paddingLeft="10dp"
+                            android:text="Számítógép"
+                            android:textAllCaps="false"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button14"
+                                android:onClick="onClick"
+                                android:text="Kijelző"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button15"
+                                android:onClick="onClick"
+                                android:text="Kép"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button16"
+                                android:onClick="onClick"
+                                android:text="Adat"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/red"
+                            android:fontFamily="casual"
+                            android:paddingLeft="10dp"
+                            android:text="Elektromosság"
+                            android:textAllCaps="false"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button17"
+                                android:onClick="onClick"
+                                android:text="Töltés"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button18"
+                                android:onClick="onClick"
+                                android:text="Teljesítmény"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button19"
+                                android:onClick="onClick"
+                                android:text="Áramerősség"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button20"
+                                android:onClick="onClick"
+                                android:text="Energia"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button21"
+                                android:onClick="onClick"
+                                android:text="Ellenállás"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button22"
+                                android:onClick="onClick"
+                                android:text="Vezetőképesség"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button23"
+                                android:onClick="onClick"
+                                android:text="Induktor"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button201"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/button202"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/red"
+                            android:fontFamily="casual"
+                            android:paddingLeft="10dp"
+                            android:text="Sugárzás"
+                            android:textAllCaps="false"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/button24"
+                                android:onClick="onClick"
+                                android:text="Sugárzás"
+                                android:textAllCaps="false"
+                                android:textSize="9sp" />
+
+                            <Button
+                                android:id="@+id/button203"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/button204"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="459dp"
+                        android:background="#C0C0C0"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            tools:context=".MainActivity">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="18dp"
+                                android:text="USD:"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextUSD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/textView1"
+                                android:layout_alignBottom="@+id/textView1"
+                                android:layout_toRightOf="@+id/textView1"
+                                android:ems="10"
+                                android:inputType="numberDecimal">
+
+                                <requestFocus />
+                            </EditText>
+
+                            <TextView
+                                android:id="@+id/textViewGBP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/editTextUSD"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="76dp"
+                                android:text="GBP:"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/textViewEURO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewGBP"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="35dp"
+                                android:text="EURO:"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <Button
+                                android:id="@+id/buttonDoit"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewEURO"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="48dp"
+                                android:text="DO IT!!!" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="454dp"
+                        android:background="#C0C0C0"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:id="@+id/TableLayout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:id="@+id/tableRow1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:id="@+id/kijelzo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="right|center"
+                                        android:includeFontPadding="true"
+                                        android:padding="5dp"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="false"
+                                        android:textColor="#000000"
+                                        android:textSize="30dp"
+                                        android:typeface="normal" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:padding="2dp">
+
+                                    <Button
+                                        android:id="@+id/button_7"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/het"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_8"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/nyolc"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_9"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/kilenc"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonOszt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/osztas"
+                                        android:textSize="30dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:padding="2dp">
+
+                                    <Button
+                                        android:id="@+id/button_4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/negy"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/ot"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/hat"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonSzoroz"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/szorzas"
+                                        android:textSize="30dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:padding="2dp">
+
+                                    <Button
+                                        android:id="@+id/button_1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/egy"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/ketto"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/harom"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonKivon"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/minusz"
+                                        android:textSize="30dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:padding="2dp">
+
+                                    <Button
+                                        android:id="@+id/buttonTorol"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/torles"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/button_0"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/nulla"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonEgyenlo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="szamol"
+                                        android:text="@string/egyenloseg"
+                                        android:textSize="30dp" />
+
+                                    <Button
+                                        android:id="@+id/buttonOsszead"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:onClick="beolvas"
+                                        android:text="@string/plusz"
+                                        android:textSize="30dp" />
+                                </TableRow>
+
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </TabHost>
+
+</LinearLayout>
